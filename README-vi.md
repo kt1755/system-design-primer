@@ -105,6 +105,8 @@ Hãy đọc [Hướng dẫn đóng góp](CONTRIBUTING.md)
   - [Đóng góp](#%c4%90%c3%b3ng-g%c3%b3p)
   - [Mục lục các chủ đề về thiết kế hệ thống](#m%e1%bb%a5c-l%e1%bb%a5c-c%c3%a1c-ch%e1%bb%a7-%c4%91%e1%bb%81-v%e1%bb%81-thi%e1%ba%bft-k%e1%ba%bf-h%e1%bb%87-th%e1%bb%91ng)
   - [Hướng dẫn học tập](#h%c6%b0%e1%bb%9bng-d%e1%ba%abn-h%e1%bb%8dc-t%e1%ba%adp)
+    - [Những thiết kế hệ thống trong thực tế](#nh%e1%bb%afng-thi%e1%ba%bft-k%e1%ba%bf-h%e1%bb%87-th%e1%bb%91ng-trong-th%e1%bb%b1c-t%e1%ba%bf)
+    - [Một số blog của các công ty công nghệ](#m%e1%bb%99t-s%e1%bb%91-blog-c%e1%bb%a7a-c%c3%a1c-c%c3%b4ng-ty-c%c3%b4ng-ngh%e1%bb%87)
 
 ##  Hướng dẫn học tập
 
@@ -129,4 +131,98 @@ Các ứng viên giàu kinh nghiệm thường sẽ được mong đợi rằng 
 Hãy bắt đầu một cách tổng quan, sau đó đi sâu vào một số lĩnh vực. Nó sẽ giúp bạn một chút về những từ khóa của các chủ đề đa dạng về thiết kế hệ thống. Điều chỉnh các topic cần theo dõi dựa vào thời hạn phỏng vấn, kinh nghiệm, vị trí phỏng vấn cũng như công ty mà bạn phỏng vấn.
 
 * **Ngắn hạn** - Ưu tiên hiểu biết rộng về thiết kế hệ thống. Luyện tập bằng cách giải quyết **một số** câu hỏi phỏng vấn.
-* **Trung hạn** - Ưu tiên hiểu biết rộng và một vài 
+* **Trung hạn** - Ưu tiên hiểu biết rộng và thêm **một số điểm chuyên sâu** về thiết kế hệ thống. Luyện tập bằng cách giải quyết **nhiều** câu hỏi phỏng vấn hơn.
+* **Dài hạn** - Ưu tiên hiểu biết **cả về rộng và sâu** đối với thiết kế hệ thống. Luyện tập bằng cách giải quyết nhiều câu hỏi phỏng vấn hơn nữa.
+
+| | Ngắn hạn | Trung hạn | Dài hạn |
+|---|---|---|---|
+|Đọc qua [bảng danh mục](#m%e1%bb%a5c-l%e1%bb%a5c-c%c3%a1c-ch%e1%bb%a7-%c4%91%e1%bb%81-v%e1%bb%81-thi%e1%ba%bft-k%e1%ba%bf-h%e1%bb%87-th%e1%bb%91ng) để nắm tổng quan về thiết kế hệ thống |:+1:|:+1:|:+1:|
+|Đọc một vài bài trên [các blog công nghệ](#m%e1%bb%99t-s%e1%bb%91-blog-c%e1%bb%a7a-c%c3%a1c-c%c3%b4ng-ty-c%c3%b4ng-ngh%e1%bb%87) của các công ty mà bạn định ứng tuyển vào|:+1:|:+1:|:+1:|
+|Đọc một vài thiết kế hệ thống trong thực tế|:+1:|:+1:|:+1:|
+
+### Những thiết kế hệ thống trong thực tế
+
+> Bài viết về chủ đề hệ thống trong thực tế được thiết kế như thế nào
+
+<p align="center">
+  <img src="http://i.imgur.com/TcUo2fw.png"/>
+  <br/>
+  <i><a href=https://www.infoq.com/presentations/Twitter-Timeline-Scalability>Source: Twitter timelines at scale</a></i>
+</p>
+
+**Don't focus on nitty gritty details for the following articles, instead:**
+
+* Identify shared principles, common technologies, and patterns within these articles
+* Study what problems are solved by each component, where it works, where it doesn't
+* Review the lessons learned
+
+|Type | System | Reference(s) |
+|---|---|---|
+| Data processing | **MapReduce** - Distributed data processing from Google | [research.google.com](http://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf) |
+| Data processing | **Spark** - Distributed data processing from Databricks | [slideshare.net](http://www.slideshare.net/AGrishchenko/apache-spark-architecture) |
+| Data processing | **Storm** - Distributed data processing from Twitter | [slideshare.net](http://www.slideshare.net/previa/storm-16094009) |
+| | | |
+| Data store | **Bigtable** - Distributed column-oriented database from Google | [harvard.edu](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf) |
+| Data store | **HBase** - Open source implementation of Bigtable | [slideshare.net](http://www.slideshare.net/alexbaranau/intro-to-hbase) |
+| Data store | **Cassandra** - Distributed column-oriented database from Facebook | [slideshare.net](http://www.slideshare.net/planetcassandra/cassandra-introduction-features-30103666)
+| Data store | **DynamoDB** - Document-oriented database from Amazon | [harvard.edu](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf) |
+| Data store | **MongoDB** - Document-oriented database | [slideshare.net](http://www.slideshare.net/mdirolf/introduction-to-mongodb) |
+| Data store | **Spanner** - Globally-distributed database from Google | [research.google.com](http://research.google.com/archive/spanner-osdi2012.pdf) |
+| Data store | **Memcached** - Distributed memory caching system | [slideshare.net](http://www.slideshare.net/oemebamo/introduction-to-memcached) |
+| Data store | **Redis** - Distributed memory caching system with persistence and value types | [slideshare.net](http://www.slideshare.net/dvirsky/introduction-to-redis) |
+| | | |
+| File system | **Google File System (GFS)** - Distributed file system | [research.google.com](http://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/gfs-sosp2003.pdf) |
+| File system | **Hadoop File System (HDFS)** - Open source implementation of GFS | [apache.org](http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html) |
+| | | |
+| Misc | **Chubby** - Lock service for loosely-coupled distributed systems from Google | [research.google.com](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/chubby-osdi06.pdf) |
+| Misc | **Dapper** - Distributed systems tracing infrastructure | [research.google.com](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36356.pdf)
+| Misc | **Kafka** - Pub/sub message queue from LinkedIn | [slideshare.net](http://www.slideshare.net/mumrah/kafka-talk-tri-hug) |
+| Misc | **Zookeeper** - Centralized infrastructure and services enabling synchronization | [slideshare.net](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper) |
+| | Add an architecture | [Contribute](#contributing) |
+
+### Một số blog của các công ty công nghệ
+
+> Kiến trúc hệ thống của một số công ty mà bạn sẽ phỏng vấn.
+>
+> Những câu hỏi mà bạn gặp có thể nằm chung domain.
+
+* [Airbnb Engineering](http://nerds.airbnb.com/)
+* [Atlassian Developers](https://developer.atlassian.com/blog/)
+* [AWS Blog](https://aws.amazon.com/blogs/aws/)
+* [Bitly Engineering Blog](http://word.bitly.com/)
+* [Box Blogs](https://blog.box.com/blog/category/engineering)
+* [Cloudera Developer Blog](http://blog.cloudera.com/)
+* [Dropbox Tech Blog](https://tech.dropbox.com/)
+* [Engineering at Quora](http://engineering.quora.com/)
+* [Ebay Tech Blog](http://www.ebaytechblog.com/)
+* [Evernote Tech Blog](https://blog.evernote.com/tech/)
+* [Etsy Code as Craft](http://codeascraft.com/)
+* [Facebook Engineering](https://www.facebook.com/Engineering)
+* [Flickr Code](http://code.flickr.net/)
+* [Foursquare Engineering Blog](http://engineering.foursquare.com/)
+* [GitHub Engineering Blog](http://githubengineering.com/)
+* [Google Research Blog](http://googleresearch.blogspot.com/)
+* [Groupon Engineering Blog](https://engineering.groupon.com/)
+* [Heroku Engineering Blog](https://engineering.heroku.com/)
+* [Hubspot Engineering Blog](http://product.hubspot.com/blog/topic/engineering)
+* [High Scalability](http://highscalability.com/)
+* [Instagram Engineering](http://instagram-engineering.tumblr.com/)
+* [Intel Software Blog](https://software.intel.com/en-us/blogs/)
+* [Jane Street Tech Blog](https://blogs.janestreet.com/category/ocaml/)
+* [LinkedIn Engineering](http://engineering.linkedin.com/blog)
+* [Microsoft Engineering](https://engineering.microsoft.com/)
+* [Microsoft Python Engineering](https://blogs.msdn.microsoft.com/pythonengineering/)
+* [Netflix Tech Blog](http://techblog.netflix.com/)
+* [Paypal Developer Blog](https://devblog.paypal.com/category/engineering/)
+* [Pinterest Engineering Blog](https://medium.com/@Pinterest_Engineering)
+* [Quora Engineering](https://engineering.quora.com/)
+* [Reddit Blog](http://www.redditblog.com/)
+* [Salesforce Engineering Blog](https://developer.salesforce.com/blogs/engineering/)
+* [Slack Engineering Blog](https://slack.engineering/)
+* [Spotify Labs](https://labs.spotify.com/)
+* [Twilio Engineering Blog](http://www.twilio.com/engineering)
+* [Twitter Engineering](https://blog.twitter.com/engineering/)
+* [Uber Engineering Blog](http://eng.uber.com/)
+* [Yahoo Engineering Blog](http://yahooeng.tumblr.com/)
+* [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
+* [Zynga Engineering Blog](https://www.zynga.com/blogs/engineering)
